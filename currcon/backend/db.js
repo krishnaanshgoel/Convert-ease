@@ -1,6 +1,6 @@
 
 const mongoose=require("mongoose");
-mongoose.connect("mongodb+srv://kgoel1932005:Kg1932005@cluster0.xvpxtfs.mongodb.net/");
+mongoose.connect(process.env.mongoconnect);
 
 const personSchema=new mongoose.Schema({
     username:{

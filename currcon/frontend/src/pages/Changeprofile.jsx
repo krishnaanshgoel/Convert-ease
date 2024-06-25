@@ -18,7 +18,7 @@ export default function Changeprofile() {
   useEffect(()=>{
     async function func(){
        const token=localStorage.getItem("token")
-       const res=await axios.get("http://localhost:3000/person/details",{
+       const res=await axios.get("/person/details",{
         headers:{
           authorization:`Bearer ${token}`
         }
@@ -48,7 +48,7 @@ const  passwordh=(newname)=>{
 const pressed=async()=>{
   const token=localStorage.getItem("token")
   try{
-  const resp=await axios.put("http://localhost:3000/person/update",{
+  const resp=await axios.put("/person/update",{
     username:Username,
     Firstname:Firstname,
     Lastname:Lastname,
