@@ -33,7 +33,7 @@ export default function Signup() {
           <Inputbox label={"Password"}placeholder={"Password"} onChange={(e)=>{setPassword(e.target.value)}} />
           <Button label={"SignUp"} onClick={async ()=>{
             try{
-              const response=await axios.post("/person/signup",{
+              const response=await axios.post(`${process.env.URL}/person/signup`,{
                 username:Username,
                   password:Password,
                   Firstname:Firstname,
