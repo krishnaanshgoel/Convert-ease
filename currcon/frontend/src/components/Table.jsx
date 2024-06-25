@@ -44,7 +44,7 @@ export default function Table() {
   }
   const pressed=async ()=>{
     const token=localStorage.getItem("token")
-try{    const res1=await axios.put("http://localhost:3000/balance/withdraw",{
+try{    const res1=await axios.put("https://n5f6bxmd-3000.inc1.devtunnels.ms/balance/withdraw",{
       curr:icurr,
       amount:amount
     },
@@ -53,7 +53,7 @@ try{    const res1=await axios.put("http://localhost:3000/balance/withdraw",{
       authorization:`Bearer ${token}`
     }
   })
-  const res2=await axios.put("http://localhost:3000/balance/deposit",{
+  const res2=await axios.put("https://n5f6bxmd-3000.inc1.devtunnels.ms/balance/deposit",{
     curr:ocurr,
     amount:finalamount
   },
