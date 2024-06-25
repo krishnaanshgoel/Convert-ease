@@ -27,7 +27,7 @@ export default function Signin() {
           <Inputbox label={"Password"}placeholder={"Password"} onChange={(e)=>{setPassword(e.target.value)}} />
           <Button label={"Signin"} onClick={async ()=>{
             try{
-              const response=await axios.post("/person/signin",{
+              const response=await axios.post("person/signin",{
                 username,
                 password,
               })
