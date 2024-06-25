@@ -22,7 +22,7 @@ export default function Profile() {
         navigate("/signin")
       }
       const token = localStorage.getItem("token");
-      const response= await axios.get("/balance/",{
+      const response= await axios.get("http://localhost:3000/balance/",{
         headers: { authorization: `Bearer ${token}` }
       });      
       setTotalbalance(response.data.balance)

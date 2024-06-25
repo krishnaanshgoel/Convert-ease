@@ -24,7 +24,7 @@ export default function Table() {
         const token = localStorage.getItem("token");
         try {
           const response = await axios.put(
-            `${process.env.URL}/balance/withdraw`,
+            "http://localhost:3000/balance/withdraw",
             {
               curr:curr,
               amount:amount,
