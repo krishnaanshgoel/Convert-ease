@@ -12,6 +12,7 @@ Welcome to Convertease! This project allows you to seamlessly convert currencies
 ## Project Link
 
 Check out the live project here: [Convertease](https://convert-ease-nine.vercel.app/)
+(The backend is not deployed anywhere so the website will give error while signing up)
 
 ---
 
