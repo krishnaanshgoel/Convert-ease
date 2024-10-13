@@ -20,4 +20,4 @@ app.use(express.json());
 
 app.use("/",Rootrouter)
 
-app.listen(3000);
+app.listen(proces.PORT || 3000);
