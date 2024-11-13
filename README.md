@@ -9,12 +9,7 @@ Welcome to Convertease! This project allows you to seamlessly convert currencies
 - Responsive and modern UI using React and Tailwind CSS
 - Secure backend with MongoDB, Express, and Zod for input validation
 
-## Project Link
 
-Check out the live project here: [Convertease](https://convert-ease-nine.vercel.app/)
-(The backend is not deployed anywhere so the website will give error while signing up)
-
----
 
 ## Table of Contents
 
