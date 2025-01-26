@@ -33,7 +33,7 @@ export default function Signup() {
           <Inputbox label={"Password"}placeholder={"Password"} onChange={(e)=>{setPassword(e.target.value)}} />
           <Button label={"SignUp"} onClick={async ()=>{
             try{
-              const response=await axios.post("https://k5stgbsn-3000.inc1.devtunnels.ms/person/signup",{
+              const response=await axios.post("http://localhost:3000/person/signup",{
                 username:Username,
                   password:Password,
                   Firstname:Firstname,

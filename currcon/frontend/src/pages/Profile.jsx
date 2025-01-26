@@ -18,11 +18,11 @@ export default function Profile() {
   const navigate=useNavigate();
   useEffect(()=>{
     async function func(){
-      if(!localStorage.getItem("token")){
-        navigate("/signin")
-      }
+      // if(!localStorage.getItem("token")){
+      //   navigate("/signin")
+      // }
       const token = localStorage.getItem("token");
-      const response= await axios.get("https://k5stgbsn-3000.inc1.devtunnels.ms/balance/",{
+      const response= await axios.get("http://localhost:3000/balance/",{
         headers: { authorization: `Bearer ${token}` }
       });      
       setTotalbalance(response.data.balance)
